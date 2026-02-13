@@ -1,8 +1,9 @@
 import flet as ft
 
 def main(page: ft.Page):
+    page.bgcolor="#5647de"
     mensagem=ft.Text("Escolha aopção correta!")
-    resposta_correta= "Gato"
+    resposta_correta= "mag-7"
 
     def verificar_resposta(e):
         if e.control.content == resposta_correta:
@@ -19,26 +20,26 @@ def main(page: ft.Page):
         ft.Column(
             controls=[
                 ft.Text(
-                    "Qual é o nome desse desenho ? ",
+                    "Qual é o nome dessa arma no free fire? ",
                     size=24,
                     weight="bold"
                 ),
                 ft.Image(
-                    src="imagem/cat.jpg",
+                    src="imagem/mag-7.webp",
                     height=200
                 ),
                 ft.Row(
                     controls=[
                         ft.Button(
-                            content="Cachorro",
+                            content="trogon",
                             on_click= verificar_resposta
                         ),
                         ft.Button(
-                            content="Gato",
+                            content="mp40",
                             on_click= verificar_resposta
                         ),
                         ft.Button(
-                            content="Coelho",
+                            content="mag-7",
                             on_click= verificar_resposta
                         )
                     ],
