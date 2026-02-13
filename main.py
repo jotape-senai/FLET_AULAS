@@ -13,6 +13,14 @@ def main(page: ft.Page):
             ft.Text("Base da tela")
             ],
             horizontal_alignment=ft.CrossAxisAlignment.CENTER
+        ),
+        ft.Row(
+            controls=[
+                ft.Text("Esquerda"),
+                ft.Button(content="Botão no meio"),
+                ft.Text("Direita")
+            ],
+            alignment=ft.MainAxisAlignment.CENTER
         )
     )
 
